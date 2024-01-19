@@ -7,6 +7,9 @@ img {
 	height: 100px;
 	display: block;
 }
+img:hover{
+	cursor: pointer;
+}
 .red{
 	border-color: tomato!important; 
 }
@@ -47,5 +50,8 @@ img {
 	width:100px;
     margin-left: auto;
 	margin-right: auto;
+}
 
+.selected{
+	border: 2px solid black;
 }

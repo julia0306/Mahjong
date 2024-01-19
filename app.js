@@ -22,10 +22,8 @@ for (let i = 0; i < 16; i++) {
     tile2.setAttribute('id', 'tile_' + (i + 16)); 
     container.appendChild(tile2);
     tiles.push(tile2);
-    let j=Math.floor(Math.random() * 15)
-    let k=Math.floor(Math.random() * 15)
-    tile1.style.order=j;
-    tile2.style.order=k;
+    tile1.style.order = i;
+    tile2.style.order = i + 0.5;  // Use a fraction to ensure distinct values
 }
 
 // Je vérifie si les deux tuilent matchent 
@@ -43,8 +41,9 @@ function checkMatch() {
             }
         } else {
             selectedTiles = [];
+            
         }
-        
+        tiles.forEach(tile=>{tile.removeAttribute('class', 'selected');})
     }
 }
 
@@ -54,6 +53,7 @@ function checkMatch() {
             if (selectedTiles.length < 2 && !selectedTiles.includes(tile)) {
                 selectedTiles.push(tile);
                 tile.getAttribute('src');
+                tile.setAttribute('class', 'selected');
                 checkMatch();
     
             }
