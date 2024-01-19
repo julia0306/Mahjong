@@ -1,0 +1,4 @@
+﻿
+Le Mahjong simplifié : 
+
+	Trouvez les paires dans ce petit Mahjong sur un seul étage.
