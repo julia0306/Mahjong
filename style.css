@@ -1,6 +1,12 @@
 body{
 	margin:0;
-	background-image: url("bg.png");
+	background-image: url("./Assets/background.jpg");
+}
+
+h1{
+	color: white; 
+	text-align: center;
+	font-family: 'roboto', Arial, Helvetica, sans-serif
 }
 img {
 	width: 80px;
@@ -10,13 +16,7 @@ img {
 img:hover{
 	cursor: pointer;
 }
-.red{
-	border-color: tomato!important; 
-}
-.green{
-	border-color: green!important; 
-	opacity: 0.60;
-}
+
 .container{
 	padding: 1px;
 	margin-top: 60px;
@@ -24,7 +24,7 @@ img:hover{
 	margin-right: auto;
 	width:672px;
 	height:480px;
-	background-color:  rgba(200,200,200,0.6);
+	background-color:  rgba(200, 200, 200, 0.808);
 	/* ombres */
 	-webkit-box-shadow: 2px 2px 73px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 2px 2px 73px -4px rgba(0,0,0,0.75);
@@ -53,5 +53,5 @@ img:hover{
 }
 
 .selected{
-	border: 2px solid black;
+	border: 3px solid black;
 }

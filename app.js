@@ -12,18 +12,18 @@ for (let i = 0; i < 16; i++) {
     let randomNumber = Math.floor(Math.random() * 42);
 
     let tile1 = document.createElement("img");
-    tile1.setAttribute('src', './classic/' + randomNumber + '.jpg');
+    tile1.setAttribute('src', './Assets/tiles/' + randomNumber + '.jpg');
     tile1.setAttribute('id', 'tile_' + i);  
     container.appendChild(tile1);
     tiles.push(tile1);
 
     let tile2 = document.createElement("img");
-    tile2.setAttribute('src', './classic/' + randomNumber + '.jpg');
+    tile2.setAttribute('src', './Assets/tiles/' + randomNumber + '.jpg');
     tile2.setAttribute('id', 'tile_' + (i + 16)); 
     container.appendChild(tile2);
     tiles.push(tile2);
     tile1.style.order = i;
-    tile2.style.order = i + 0.5;  // Use a fraction to ensure distinct values
+    tile2.style.order = i + 0.5; 
 }
 
 // Je vérifie si les deux tuilent matchent 
